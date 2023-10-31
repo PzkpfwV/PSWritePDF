@@ -29,6 +29,7 @@
     #>
     [CmdletBinding()]
     param(
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [string[]] $InputFile,
         [string] $OutputFile,
         [switch] $IgnoreProtection
